@@ -1,0 +1,17 @@
+HarmonicSpace Website Notes
+
+Logo file names to place in assets\logos:
+
+harmonicspace-logo.png
+harmonicspace-logo-transparent.png
+harmonicspace-icon.png
+favicon.png
+
+Future SVG files go in assets\logos\svg:
+
+harmonicspace-logo.svg
+harmonicspace-icon.svg
+harmonicspace-animated.svg
+
+Project photos go in assets\images\projects.
+Background images go in assets\images\backgrounds.
