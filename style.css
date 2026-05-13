@@ -48,7 +48,7 @@ a {
   min-height: 42px;
   padding: 0.65rem 1.05rem;
   font-size: 0.78rem;
-  box-shadow: 0 0 18px rgba(176, 0, 255, 0.26);
+  box-shadow: 0 0 18px rgba(176, 0, 255, 0.22);
 }
 
 .consultation-button,
@@ -69,7 +69,7 @@ a {
 .consultation-button {
   background: linear-gradient(135deg, #8b00ff, #c200ff);
   color: white;
-  box-shadow: 0 0 20px rgba(176, 0, 255, 0.28);
+  box-shadow: 0 0 18px rgba(176, 0, 255, 0.24);
 }
 
 .consultation-button:hover,
@@ -89,7 +89,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 7rem 1.5in 5rem;
+  padding: 6.6rem 1.5in 4.8rem;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -98,15 +98,15 @@ a {
 
 .logo-light-field {
   position: absolute;
-  top: 4.5rem;
+  top: 4.2rem;
   left: 50%;
-  width: min(52vw, 680px);
-  height: min(44vw, 540px);
+  width: min(45vw, 560px);
+  height: min(36vw, 430px);
   transform: translateX(-50%);
   background:
-    radial-gradient(ellipse at center, rgba(190, 60, 255, 0.23) 0%, rgba(135, 0, 255, 0.12) 32%, rgba(70, 0, 105, 0.055) 52%, transparent 72%);
-  filter: blur(22px);
-  opacity: 0.9;
+    radial-gradient(ellipse at center, rgba(190, 60, 255, 0.18) 0%, rgba(135, 0, 255, 0.085) 34%, rgba(70, 0, 105, 0.035) 54%, transparent 74%);
+  filter: blur(24px);
+  opacity: 0.82;
   pointer-events: none;
 }
 
@@ -124,24 +124,24 @@ a {
   position: relative;
   display: grid;
   place-items: center;
-  margin-bottom: clamp(2.4rem, 4.8vw, 3.8rem);
+  margin-bottom: clamp(2.1rem, 4vw, 3rem);
 }
 
 .behind-logo-light {
   position: absolute;
-  width: 108%;
-  height: 82%;
+  width: 100%;
+  height: 72%;
   border-radius: 50%;
   background:
-    radial-gradient(ellipse at center, rgba(196, 72, 255, 0.19), rgba(122, 0, 190, 0.08) 45%, transparent 72%);
-  filter: blur(26px);
-  opacity: 0.95;
+    radial-gradient(ellipse at center, rgba(196, 72, 255, 0.14), rgba(122, 0, 190, 0.055) 46%, transparent 72%);
+  filter: blur(28px);
+  opacity: 0.88;
 }
 
 .hero-logo {
   position: relative;
   z-index: 2;
-  width: clamp(300px, 34vw, 500px);
+  width: clamp(300px, 31vw, 470px);
   max-width: 88vw;
   filter: none;
 }
@@ -149,17 +149,18 @@ a {
 .hero h1 {
   width: calc(100vw - 3in);
   max-width: none;
-  font-size: clamp(1.45rem, 2.78vw, 3rem);
-  line-height: 1.2;
-  letter-spacing: -0.032em;
+  font-size: clamp(1.42rem, 2.42vw, 2.72rem);
+  line-height: 1.24;
+  letter-spacing: -0.028em;
   margin-bottom: 1.15rem;
   text-wrap: balance;
+  font-weight: 700;
 }
 
 .hero-copy {
   max-width: 900px;
   color: var(--muted);
-  font-size: clamp(0.9rem, 1.05vw, 1.04rem);
+  font-size: clamp(0.9rem, 1.02vw, 1.02rem);
   margin-bottom: 2rem;
 }
 
