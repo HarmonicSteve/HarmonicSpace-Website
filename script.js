@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
 
       const formData = new FormData(form);
-
       const subject = encodeURIComponent("HarmonicSpace Consultation Request");
 
       const body = encodeURIComponent(

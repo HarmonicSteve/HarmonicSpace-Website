@@ -6,11 +6,8 @@
 
 :root {
   --black: #030305;
-  --charcoal: #09090d;
-  --soft-black: #0d0b14;
   --purple: #b000ff;
   --purple-soft: #d167ff;
-  --purple-glow: rgba(176, 0, 255, 0.32);
   --text: #f7f2ff;
   --muted: #c7b9d6;
   --line: rgba(209, 103, 255, 0.22);
@@ -22,10 +19,7 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(circle at center top, rgba(176, 0, 255, 0.13), transparent 42rem),
-    radial-gradient(circle at center, rgba(176, 0, 255, 0.055), transparent 58rem),
-    var(--black);
+  background: var(--black);
   color: var(--text);
   font-family: Verdana, Arial, sans-serif;
   line-height: 1.65;
@@ -54,9 +48,7 @@ a {
   min-height: 42px;
   padding: 0.65rem 1.05rem;
   font-size: 0.78rem;
-  box-shadow:
-    0 0 14px rgba(176, 0, 255, 0.32),
-    0 0 34px rgba(176, 0, 255, 0.14);
+  box-shadow: 0 0 18px rgba(176, 0, 255, 0.26);
 }
 
 .consultation-button,
@@ -77,9 +69,7 @@ a {
 .consultation-button {
   background: linear-gradient(135deg, #8b00ff, #c200ff);
   color: white;
-  box-shadow:
-    0 0 18px rgba(176, 0, 255, 0.35),
-    0 0 42px rgba(176, 0, 255, 0.16);
+  box-shadow: 0 0 20px rgba(176, 0, 255, 0.28);
 }
 
 .consultation-button:hover,
@@ -99,56 +89,77 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 7rem 1.3rem 5rem;
+  padding: 7rem 1.5in 5rem;
   position: relative;
   overflow: hidden;
   text-align: center;
+  background: #030305;
 }
 
-.ambient-glow {
+.logo-light-field {
   position: absolute;
-  inset: auto;
-  width: min(76vw, 980px);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(176, 0, 255, 0.19), rgba(176, 0, 255, 0.065) 35%, transparent 70%);
-  filter: blur(18px);
+  top: 4.5rem;
+  left: 50%;
+  width: min(52vw, 680px);
+  height: min(44vw, 540px);
+  transform: translateX(-50%);
+  background:
+    radial-gradient(ellipse at center, rgba(190, 60, 255, 0.23) 0%, rgba(135, 0, 255, 0.12) 32%, rgba(70, 0, 105, 0.055) 52%, transparent 72%);
+  filter: blur(22px);
+  opacity: 0.9;
   pointer-events: none;
 }
 
 .hero-inner {
   position: relative;
   z-index: 2;
-  width: min(100%, 1220px);
+  width: 100%;
+  max-width: none;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.logo-stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin-bottom: clamp(2.4rem, 4.8vw, 3.8rem);
+}
+
+.behind-logo-light {
+  position: absolute;
+  width: 108%;
+  height: 82%;
+  border-radius: 50%;
+  background:
+    radial-gradient(ellipse at center, rgba(196, 72, 255, 0.19), rgba(122, 0, 190, 0.08) 45%, transparent 72%);
+  filter: blur(26px);
+  opacity: 0.95;
+}
+
 .hero-logo {
+  position: relative;
+  z-index: 2;
   width: clamp(300px, 34vw, 500px);
   max-width: 88vw;
-  margin-bottom: clamp(2.2rem, 4.4vw, 3.3rem);
-  filter:
-    drop-shadow(0 0 7px rgba(220, 95, 255, 0.48))
-    drop-shadow(0 0 20px rgba(176, 0, 255, 0.3))
-    drop-shadow(0 0 48px rgba(176, 0, 255, 0.16));
+  filter: none;
 }
 
 .hero h1 {
-  width: min(96vw, 1180px);
-  max-width: 1180px;
-  font-size: clamp(1.55rem, 3.15vw, 3.35rem);
-  line-height: 1.18;
-  letter-spacing: -0.036em;
+  width: calc(100vw - 3in);
+  max-width: none;
+  font-size: clamp(1.45rem, 2.78vw, 3rem);
+  line-height: 1.2;
+  letter-spacing: -0.032em;
   margin-bottom: 1.15rem;
   text-wrap: balance;
 }
 
 .hero-copy {
-  max-width: 850px;
+  max-width: 900px;
   color: var(--muted);
-  font-size: clamp(0.92rem, 1.1vw, 1.08rem);
+  font-size: clamp(0.9rem, 1.05vw, 1.04rem);
   margin-bottom: 2rem;
 }
 
@@ -207,14 +218,12 @@ h2 {
 
 .service-card {
   background:
-    linear-gradient(180deg, rgba(176, 0, 255, 0.065), rgba(255, 255, 255, 0.025)),
+    linear-gradient(180deg, rgba(176, 0, 255, 0.055), rgba(255, 255, 255, 0.025)),
     var(--card);
   border: 1px solid var(--line);
   border-radius: 26px;
   padding: 1.65rem;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.05),
-    0 0 28px rgba(176, 0, 255, 0.055);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .service-card h3 {
@@ -231,8 +240,8 @@ h2 {
 
 .philosophy-section {
   background:
-    radial-gradient(circle at center top, rgba(176, 0, 255, 0.08), transparent 38rem),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.008), rgba(176, 0, 255, 0.018));
+    radial-gradient(circle at center top, rgba(176, 0, 255, 0.055), transparent 36rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.006), rgba(176, 0, 255, 0.012));
 }
 
 .philosophy-inner {
@@ -347,6 +356,15 @@ textarea {
 }
 
 @media (max-width: 1100px) {
+  .hero {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .hero h1 {
+    width: min(94vw, 980px);
+  }
+
   .service-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -371,6 +389,12 @@ textarea {
     padding-top: 8.2rem;
   }
 
+  .logo-light-field {
+    width: 96vw;
+    height: 420px;
+    top: 5.5rem;
+  }
+
   .service-grid,
   .form-grid {
     grid-template-columns: 1fr;
@@ -386,6 +410,6 @@ textarea {
 
   .hero h1 {
     width: min(94vw, 620px);
-    font-size: clamp(1.6rem, 8vw, 2.45rem);
+    font-size: clamp(1.5rem, 7.2vw, 2.3rem);
   }
 }
