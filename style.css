@@ -411,8 +411,16 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .service-card {
+    grid-column: auto !important;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .service-card:nth-child(4),
+  .service-card:nth-child(5),
   .service-card:last-child {
-    grid-column: auto;
+    grid-column: auto !important;
   }
 
   .hero-logo {
