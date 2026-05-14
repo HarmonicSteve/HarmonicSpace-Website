@@ -207,9 +207,12 @@ h2 {
   color: var(--muted);
   font-size: clamp(1rem, 1.25vw, 1.15rem);
   max-width: 850px;
-  margin: 0 auto 3rem;
+  margin: 0.8rem auto;
 }
 
+.section-intro + .section-intro {
+  margin-top: 0.25rem;
+}
 .service-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
